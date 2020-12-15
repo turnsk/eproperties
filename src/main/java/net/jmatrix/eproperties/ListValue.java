@@ -19,7 +19,7 @@ public class ListValue implements Value<List<String>> {
       return getRuntimeValue().toString();
    }
    
-   /** Returns a List<String> that has not been passed through the 
+   /** Returns a List&lt;String&gt; that has not been passed through the
     * SubstitutionProcessor. */
    public List<String> getPersistentValue() {
       return persistentValue;

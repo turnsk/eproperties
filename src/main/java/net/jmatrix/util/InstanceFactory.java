@@ -38,7 +38,7 @@ public final class InstanceFactory
     * Users of this class will always cast the resulting object 
     * to the appropriate type.
     *
-    * @param EProperties The properties object which defines the class
+    * @param props The properties object which defines the class
     * and any parameters for its construction.
     * @return An Object, which is an instance of the class requested.
     */

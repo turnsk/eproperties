@@ -4,16 +4,16 @@ plugins {
 
 apply plugin: 'java'
 
+sourceSets {
+    main.java.srcDirs += 'build/generated/javacc/'
+}
 
 repositories {
     jcenter()
 }
 
 dependencies {
-    compile 'ch.qos.logback:logback-classic:1.1.3',
-            'org.slf4j:slf4j-api:1.7.12'
+    implementation 'org.slf4j:slf4j-api:1.7.12'
 
-    testCompile 'junit:junit:4.12', files('lib/testproperties.jar')
+    testImplementation 'junit:junit:4.12', files('lib/testproperties.jar')
 }
-
-
